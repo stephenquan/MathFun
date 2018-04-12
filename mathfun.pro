@@ -3,6 +3,10 @@ TARGET = MathFun
 QT += qml quick
 CONFIG += plugin c++11
 
+ios {
+    CONFIG += shared
+}
+
 TARGET = $$qtLibraryTarget($$TARGET)
 uri = Com.ACMI.MathFun
 
